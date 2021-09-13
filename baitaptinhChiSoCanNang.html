@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let weight = parseFloat(prompt('nhập cân nặng của bạn'))
+    let height = parseFloat(prompt('nhập chiều cao của bạn'))
+    let bmi = parseFloat(weight / (height ** 2)).toFixed(2)
+    let check = bmi < 18.5 ? 'Underweight' : bmi < 25 ? 'Normal' : bmi < 30 ? 'Overweight' : 'Obese';
+    switch (check) {
+        case "Underweight":
+            alert(' chỉ số BMI là ' + bmi+ '  You are Underweight ! ');
+            break
+        case 'Normal':
+            alert(' chỉ số BMI là ' + bmi+ '  You are Normal ! ' )
+            break
+        case 'Overweight':
+            alert( ' chỉ số BMI là ' + bmi+ '  You are Overweight !')
+            break
+        default:
+            alert(' chỉ số BMI là ' + bmi+ '  Obese ')
+    }
+</script>
+
+</body>
+</html>
